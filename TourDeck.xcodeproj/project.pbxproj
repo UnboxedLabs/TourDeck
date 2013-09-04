@@ -14,7 +14,6 @@
 		B3C3598617D6CDC9005C613D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C3598517D6CDC9005C613D /* main.m */; };
 		B3C3598A17D6CDC9005C613D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C3598917D6CDC9005C613D /* AppDelegate.m */; };
 		B3C3598D17D6CDC9005C613D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3C3598B17D6CDC9005C613D /* Main.storyboard */; };
-		B3C3599017D6CDC9005C613D /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C3598F17D6CDC9005C613D /* FirstViewController.m */; };
 		B3C3599317D6CDC9005C613D /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C3599217D6CDC9005C613D /* SecondViewController.m */; };
 		B3C3599517D6CDC9005C613D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3C3599417D6CDC9005C613D /* Images.xcassets */; };
 		B3C3599C17D6CDCA005C613D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C3599B17D6CDCA005C613D /* XCTest.framework */; };
@@ -22,6 +21,8 @@
 		B3C3599E17D6CDCA005C613D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C3597D17D6CDC9005C613D /* UIKit.framework */; };
 		B3C359A617D6CDCA005C613D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B3C359A417D6CDCA005C613D /* InfoPlist.strings */; };
 		B3C359A817D6CDCA005C613D /* TourDeckTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C359A717D6CDCA005C613D /* TourDeckTests.m */; };
+		B3C359B317D6CF01005C613D /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C359B217D6CF01005C613D /* LoginViewController.m */; };
+		B3C359B617D6DB36005C613D /* ToursViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C359B517D6DB36005C613D /* ToursViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,8 +47,6 @@
 		B3C3598817D6CDC9005C613D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B3C3598917D6CDC9005C613D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B3C3598C17D6CDC9005C613D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B3C3598E17D6CDC9005C613D /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		B3C3598F17D6CDC9005C613D /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		B3C3599117D6CDC9005C613D /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		B3C3599217D6CDC9005C613D /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		B3C3599417D6CDC9005C613D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -56,6 +55,10 @@
 		B3C359A317D6CDCA005C613D /* TourDeckTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TourDeckTests-Info.plist"; sourceTree = "<group>"; };
 		B3C359A517D6CDCA005C613D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B3C359A717D6CDCA005C613D /* TourDeckTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TourDeckTests.m; sourceTree = "<group>"; };
+		B3C359B117D6CF01005C613D /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		B3C359B217D6CF01005C613D /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		B3C359B417D6DB36005C613D /* ToursViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToursViewController.h; sourceTree = "<group>"; };
+		B3C359B517D6DB36005C613D /* ToursViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToursViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,8 +121,10 @@
 				B3C3598817D6CDC9005C613D /* AppDelegate.h */,
 				B3C3598917D6CDC9005C613D /* AppDelegate.m */,
 				B3C3598B17D6CDC9005C613D /* Main.storyboard */,
-				B3C3598E17D6CDC9005C613D /* FirstViewController.h */,
-				B3C3598F17D6CDC9005C613D /* FirstViewController.m */,
+				B3C359B417D6DB36005C613D /* ToursViewController.h */,
+				B3C359B517D6DB36005C613D /* ToursViewController.m */,
+				B3C359B117D6CF01005C613D /* LoginViewController.h */,
+				B3C359B217D6CF01005C613D /* LoginViewController.m */,
 				B3C3599117D6CDC9005C613D /* SecondViewController.h */,
 				B3C3599217D6CDC9005C613D /* SecondViewController.m */,
 				B3C3599417D6CDC9005C613D /* Images.xcassets */,
@@ -204,6 +209,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Unboxed Labs";
 				TargetAttributes = {
+					B3C3597517D6CDC9005C613D = {
+						DevelopmentTeam = 9A6KLVCQ8A;
+					};
 					B3C3599917D6CDCA005C613D = {
 						TestTargetID = B3C3597517D6CDC9005C613D;
 					};
@@ -254,10 +262,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3C359B617D6DB36005C613D /* ToursViewController.m in Sources */,
 				B3C3599317D6CDC9005C613D /* SecondViewController.m in Sources */,
 				B3C3598A17D6CDC9005C613D /* AppDelegate.m in Sources */,
-				B3C3599017D6CDC9005C613D /* FirstViewController.m in Sources */,
 				B3C3598617D6CDC9005C613D /* main.m in Sources */,
+				B3C359B317D6CF01005C613D /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,10 +389,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TourDeck/TourDeck-Prefix.pch";
 				INFOPLIST_FILE = "TourDeck/TourDeck-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -393,10 +405,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TourDeck/TourDeck-Prefix.pch";
 				INFOPLIST_FILE = "TourDeck/TourDeck-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

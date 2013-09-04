@@ -1,5 +1,5 @@
 //
-//  FirstViewController.h
+//  ToursViewController.h
 //  TourDeck
 //
 //  Created by Leonardo Correa on 9/3/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
+@interface ToursViewController : UITableViewController
 
 @end
