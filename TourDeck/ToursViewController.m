@@ -68,6 +68,7 @@
     NSLog(@"%@", tour);
     
     cell.textLabel.text = tour;
+    cell.detailTextLabel.text = tour;
     
     // Configure the cell...
     
