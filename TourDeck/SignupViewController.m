@@ -9,10 +9,18 @@
 #import "SignupViewController.h"
 
 @interface SignupViewController ()
+@property (strong, nonatomic) IBOutlet UITextField *firstNameField;
+@property (strong, nonatomic) IBOutlet UITextField *lastNameField;
+@property (strong, nonatomic) IBOutlet UITextField *emailField;
+@property (strong, nonatomic) IBOutlet UITextField *confirmEmailField;
+@property (strong, nonatomic) IBOutlet UIPickerView *countryPicker;
 
 @end
 
 @implementation SignupViewController
+{
+    NSArray * countries;
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,7 +34,21 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    countries = [[NSArray alloc] initWithObjects:@"Country", @"Country2", nil];
+}
+
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
+{
+    return 1;
+}
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
+{
+    return [countries count];
+}
+
+- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
+{
+    return [countries objectAtIndex:row];
 }
 
 - (void)didReceiveMemoryWarning
