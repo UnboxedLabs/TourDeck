@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2E13992117D77A69000FB957 /* SignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E13992017D77A69000FB957 /* SignupViewController.m */; };
+		2E4AF30F17D8D360004994C0 /* TourProfileDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E4AF30E17D8D360004994C0 /* TourProfileDetailViewController.m */; };
 		B3C3597A17D6CDC9005C613D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C3597917D6CDC9005C613D /* Foundation.framework */; };
 		B3C3597C17D6CDC9005C613D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C3597B17D6CDC9005C613D /* CoreGraphics.framework */; };
 		B3C3597E17D6CDC9005C613D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C3597D17D6CDC9005C613D /* UIKit.framework */; };
@@ -42,6 +43,8 @@
 		1A459328CAEC40B08F961AE7 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		2E13991F17D77A69000FB957 /* SignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignupViewController.h; sourceTree = "<group>"; };
 		2E13992017D77A69000FB957 /* SignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignupViewController.m; sourceTree = "<group>"; };
+		2E4AF30D17D8D360004994C0 /* TourProfileDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TourProfileDetailViewController.h; sourceTree = "<group>"; };
+		2E4AF30E17D8D360004994C0 /* TourProfileDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TourProfileDetailViewController.m; sourceTree = "<group>"; };
 		B3C3597617D6CDC9005C613D /* TourDeck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TourDeck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3C3597917D6CDC9005C613D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B3C3597B17D6CDC9005C613D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -140,6 +143,8 @@
 				B3C3598017D6CDC9005C613D /* Supporting Files */,
 				B3C359B417D6DB36005C613D /* ToursViewController.h */,
 				B3C359B517D6DB36005C613D /* ToursViewController.m */,
+				2E4AF30D17D8D360004994C0 /* TourProfileDetailViewController.h */,
+				2E4AF30E17D8D360004994C0 /* TourProfileDetailViewController.m */,
 			);
 			path = TourDeck;
 			sourceTree = "<group>";
@@ -308,6 +313,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E4AF30F17D8D360004994C0 /* TourProfileDetailViewController.m in Sources */,
 				2E13992117D77A69000FB957 /* SignupViewController.m in Sources */,
 				B3C359B617D6DB36005C613D /* ToursViewController.m in Sources */,
 				B3C3599317D6CDC9005C613D /* SecondViewController.m in Sources */,

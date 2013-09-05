@@ -68,6 +68,44 @@
             </objects>
             <point key="canvasLocation" x="-127" y="-44"/>
         </scene>
+        <!--Tour Profile Detail View Controller-->
+        <scene sceneID="IhF-4f-Prh">
+            <objects>
+                <tableViewController id="6gz-fv-RsZ" customClass="TourProfileDetailViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="XKc-Qv-fhk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="x1k-nd-Igh" style="IBUITableViewCellStyleDefault" id="jyc-lm-ksi">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jyc-lm-ksi" id="5JV-MK-V9h">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="x1k-nd-Igh">
+                                            <rect key="frame" x="15" y="0.0" width="290" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="6gz-fv-RsZ" id="Yfl-ES-MhI"/>
+                            <outlet property="delegate" destination="6gz-fv-RsZ" id="mex-c2-n1t"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="ZD5-Lj-4aS"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EYC-ib-Rv2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="316" y="-953"/>
+        </scene>
         <!--Login View Controller-->
         <scene sceneID="K7z-1O-AsR">
             <objects>
@@ -279,11 +317,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="Zs0-C3-3uF" detailTextLabel="NHQ-dx-TQm" style="IBUITableViewCellStyleSubtitle" id="Pah-cV-5mb">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="Zs0-C3-3uF" detailTextLabel="NHQ-dx-TQm" style="IBUITableViewCellStyleSubtitle" id="Pah-cV-5mb">
                                 <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Pah-cV-5mb" id="VUH-6K-eXt">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Zs0-C3-3uF">
@@ -302,6 +340,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="6gz-fv-RsZ" kind="push" identifier="tourProfileDetail" id="MgC-j5-0vo"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -316,7 +357,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G9H-iE-gjb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-137" y="-1053"/>
+            <point key="canvasLocation" x="-127" y="-953"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GPn-nt-jMS">
@@ -338,7 +379,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AJB-cZ-jAD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1914" y="162"/>
+            <point key="canvasLocation" x="-1750" y="170"/>
         </scene>
     </scenes>
     <resources>
