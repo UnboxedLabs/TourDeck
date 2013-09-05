@@ -10,6 +10,7 @@
 
 @interface SecondViewController ()
 
+@property (strong, nonatomic) IBOutlet UIButton *logoutButton;
 @end
 
 @implementation SecondViewController
@@ -18,6 +19,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+}
+- (IBAction)logout:(id)sender {
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 - (void)didReceiveMemoryWarning
