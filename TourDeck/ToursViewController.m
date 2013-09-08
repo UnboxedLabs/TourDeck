@@ -7,9 +7,11 @@
 //
 
 #import "ToursViewController.h"
+#import "TourGuideCell.h"
+#import "TourGuide.h"
 
 @interface ToursViewController () {
-    NSArray *tours;
+    NSMutableArray *_guides;
 }
 
 @end
@@ -28,8 +30,20 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    tours = @[@"Hello", @"Awesome", @"Tours"];
+    NSArray *tours = @[
+                       @{@"firstName": @"Leo",
+                         @"lastName": @"Cor",
+                         @"photoPath":@"leo.png",
+                         @"headline":@"Professional bedrester."
+                        }
+    ];
+    _guides = [[NSMutableArray alloc] init];
+
+    for (NSDictionary *guide in tours) {
+        TourGuide *profile = [[TourGuide alloc] initWithDictionary:guide];
+        [_guides addObject:profile];
+    }
+
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -55,22 +69,19 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return [tours count];
+    return [_guides count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    static NSString *CellIdentifier = @"TourGuideCell";
+    TourGuideCell *cell = (TourGuideCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    NSString *tour = tours[indexPath.row];
+    TourGuide *guide= _guides[indexPath.row];
     
-    NSLog(@"%@", tour);
-    
-    cell.textLabel.text = tour;
-    cell.detailTextLabel.text = tour;
-    
-    // Configure the cell...
+    cell.tourGuideName.text = [guide getFullName];
+    cell.tourGuidePhoto.image = [UIImage imageNamed:guide.photoPath];
+    cell.tourGuideHeadline.text = guide.headline;
     
     return cell;
 }
