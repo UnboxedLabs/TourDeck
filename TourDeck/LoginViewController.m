@@ -7,6 +7,7 @@
 //
 
 #import "LoginViewController.h"
+#import "ToursViewController.h"
 
 @interface LoginViewController ()
 @property (strong, nonatomic) IBOutlet UITextField *emailField;
@@ -39,6 +40,22 @@
     tapped.cancelsTouchesInView = NO;
     
     [self.view addGestureRecognizer:tapped];
+}
+
+- (void) viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES];
+}
+
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if([segue.identifier isEqualToString:@"homeView"])
+    {
+        NSLog(@"stuff");
+        ToursViewController* controller = (ToursViewController *)segue.destinationViewController;
+        controller.tabBarController.navigationItem.hidesBackButton = YES;
+    }
 }
 
 - (BOOL)textFieldShouldReturn: (UITextField *)textField

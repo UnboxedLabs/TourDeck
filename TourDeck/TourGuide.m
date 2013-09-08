@@ -15,10 +15,11 @@
     self = [self init];
     
     if (self) {
-        self.firstName = dictionary[@"firstName"];
-        self.lastName = dictionary[@"lastName"];
-        self.headline = dictionary[@"headline"];
-        self.photoPath = dictionary[@"photoPath"];
+        self.firstName = [dictionary objectForKey:@"firstName"] ? dictionary[@"firstName"] : @"";
+        self.lastName = [dictionary objectForKey:@"lastName"] ? dictionary[@"lastName"] : @"";
+        self.headline = [dictionary objectForKey:@"headline"] ? dictionary[@"headline"] : @"";
+        self.photoPath = [dictionary objectForKey:@"photoPath"] ? dictionary[@"photoPath"] : @"";
+        self.location = [dictionary objectForKey:@"location"] ? dictionary[@"location"] : @"";
     }
     
     return self;
@@ -26,9 +27,7 @@
 
 - (NSString*) getFullName
 {
-    NSArray *name = @[self.firstName, self.lastName];
-    NSString *fullName = [name componentsJoinedByString:@" "];
-    return fullName;
+   return [NSString stringWithFormat:@"%@ %@", self.firstName, self.lastName];
     
 }
 

@@ -11,9 +11,9 @@
 		2E41E25C17DBDAB1005B5422 /* TourGuideCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E41E25B17DBDAB1005B5422 /* TourGuideCell.m */; };
 		2E41E25F17DBDF99005B5422 /* TourGuide.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E41E25E17DBDF99005B5422 /* TourGuide.m */; };
 		2E41E26317DBE28D005B5422 /* leo.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E41E26217DBE28D005B5422 /* leo.png */; };
-		2E4AF30F17D8D360004994C0 /* TourProfileDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E4AF30E17D8D360004994C0 /* TourProfileDetailViewController.m */; };
 		B30307E017DC2F3700399215 /* AccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B30307DF17DC2F3700399215 /* AccountViewController.m */; };
 		B30307E317DC332600399215 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = B30307E217DC332600399215 /* User.m */; };
+		2E41E26617DC34BF005B5422 /* TourProfileDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E41E26517DC34BF005B5422 /* TourProfileDetailViewController.m */; };
 		B3C3597A17D6CDC9005C613D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C3597917D6CDC9005C613D /* Foundation.framework */; };
 		B3C3597C17D6CDC9005C613D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C3597B17D6CDC9005C613D /* CoreGraphics.framework */; };
 		B3C3597E17D6CDC9005C613D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C3597D17D6CDC9005C613D /* UIKit.framework */; };
@@ -52,12 +52,12 @@
 		2E41E25D17DBDF99005B5422 /* TourGuide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TourGuide.h; sourceTree = "<group>"; };
 		2E41E25E17DBDF99005B5422 /* TourGuide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TourGuide.m; sourceTree = "<group>"; };
 		2E41E26217DBE28D005B5422 /* leo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leo.png; sourceTree = "<group>"; };
-		2E4AF30D17D8D360004994C0 /* TourProfileDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TourProfileDetailViewController.h; sourceTree = "<group>"; };
-		2E4AF30E17D8D360004994C0 /* TourProfileDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TourProfileDetailViewController.m; sourceTree = "<group>"; };
 		B30307DE17DC2F3700399215 /* AccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountViewController.h; sourceTree = "<group>"; };
 		B30307DF17DC2F3700399215 /* AccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountViewController.m; sourceTree = "<group>"; };
 		B30307E117DC332600399215 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		B30307E217DC332600399215 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		2E41E26417DC34BF005B5422 /* TourProfileDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TourProfileDetailViewController.h; sourceTree = "<group>"; };
+		2E41E26517DC34BF005B5422 /* TourProfileDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TourProfileDetailViewController.m; sourceTree = "<group>"; };
 		B3C3597617D6CDC9005C613D /* TourDeck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TourDeck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3C3597917D6CDC9005C613D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B3C3597B17D6CDC9005C613D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -160,25 +160,27 @@
 		B3C3597F17D6CDC9005C613D /* TourDeck */ = {
 			isa = PBXGroup;
 			children = (
-				2E41E26117DBE274005B5422 /* Images */,
-				2E41E26017DBE029005B5422 /* Models */,
 				B3C3598817D6CDC9005C613D /* AppDelegate.h */,
 				B3C3598917D6CDC9005C613D /* AppDelegate.m */,
 				B30307DE17DC2F3700399215 /* AccountViewController.h */,
 				B30307DF17DC2F3700399215 /* AccountViewController.m */,
+				2E41E26117DBE274005B5422 /* Images */,
 				B3C3599417D6CDC9005C613D /* Images.xcassets */,
 				B3C359B117D6CF01005C613D /* LoginViewController.h */,
 				B3C359B217D6CF01005C613D /* LoginViewController.m */,
 				B3C3598B17D6CDC9005C613D /* Main.storyboard */,
 				2E41E25A17DBDAB1005B5422 /* TourGuideCell.h */,
 				2E41E25B17DBDAB1005B5422 /* TourGuideCell.m */,
+				2E41E26017DBE029005B5422 /* Models */,
 				2E13991F17D77A69000FB957 /* SignupViewController.h */,
 				2E13992017D77A69000FB957 /* SignupViewController.m */,
 				B3C3598017D6CDC9005C613D /* Supporting Files */,
+				2E41E25A17DBDAB1005B5422 /* TourGuideCell.h */,
+				2E41E25B17DBDAB1005B5422 /* TourGuideCell.m */,
+				2E41E26417DC34BF005B5422 /* TourProfileDetailViewController.h */,
+				2E41E26517DC34BF005B5422 /* TourProfileDetailViewController.m */,
 				B3C359B417D6DB36005C613D /* ToursViewController.h */,
 				B3C359B517D6DB36005C613D /* ToursViewController.m */,
-				2E4AF30D17D8D360004994C0 /* TourProfileDetailViewController.h */,
-				2E4AF30E17D8D360004994C0 /* TourProfileDetailViewController.m */,
 			);
 			path = TourDeck;
 			sourceTree = "<group>";
@@ -349,7 +351,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B30307E317DC332600399215 /* User.m in Sources */,
-				2E4AF30F17D8D360004994C0 /* TourProfileDetailViewController.m in Sources */,
 				2E13992117D77A69000FB957 /* SignupViewController.m in Sources */,
 				2E41E25C17DBDAB1005B5422 /* TourGuideCell.m in Sources */,
 				B3C359B617D6DB36005C613D /* ToursViewController.m in Sources */,
@@ -358,6 +359,7 @@
 				B3C3598A17D6CDC9005C613D /* AppDelegate.m in Sources */,
 				B3C3598617D6CDC9005C613D /* main.m in Sources */,
 				B3C359B317D6CF01005C613D /* LoginViewController.m in Sources */,
+				2E41E26617DC34BF005B5422 /* TourProfileDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

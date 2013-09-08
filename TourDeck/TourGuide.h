@@ -10,10 +10,13 @@
 
 @interface TourGuide : NSObject
 
-@property(strong, nonatomic) NSString * firstName;
-@property(strong, nonatomic) NSString * lastName;
-@property(strong, nonatomic) NSString * photoPath;
-@property(strong, nonatomic) NSString * headline;
+@property(strong, nonatomic) NSString *firstName;
+@property(strong, nonatomic) NSString *lastName;
+@property(strong, nonatomic) NSString *photoPath;
+@property(strong, nonatomic) NSString *headline;
+@property(strong, nonatomic) NSString *city;
+@property(strong, nonatomic) NSString *country;
+@property(strong, nonatomic) NSString *location;
 
 -(id) initWithDictionary:(NSDictionary *)dictionary;
 -(NSString*) getFullName;

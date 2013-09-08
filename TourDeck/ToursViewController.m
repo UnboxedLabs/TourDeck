@@ -9,6 +9,7 @@
 #import "ToursViewController.h"
 #import "TourGuideCell.h"
 #import "TourGuide.h"
+#import "TourProfileDetailViewController.h"
 
 @interface ToursViewController () {
     NSMutableArray *_guides;
@@ -30,11 +31,34 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
+
+    // TODO: set navbar with current tab title
+
     NSArray *tours = @[
                        @{@"firstName": @"Leo",
                          @"lastName": @"Cor",
                          @"photoPath":@"leo.png",
-                         @"headline":@"Professional bedrester."
+                         @"headline":@"Professional bedrester.",
+                         @"location":@"Miami, FL"
+                        },
+                       @{@"firstName": @"David",
+                         @"lastName": @"Small",
+                         @"photoPath":@"leo.png",
+                         @"headline":@"THE man.",
+                         @"location":@"Cleveland, OH"
+                        },
+                       @{@"firstName": @"Minnie",
+                         @"lastName": @"Walker",
+                         @"photoPath":@"leo.png",
+                         @"headline":@"Talented.",
+                         @"location": @"Gatlinburg, TN"
+                        },
+                       @{@"firstName": @"Adria",
+                         @"lastName": @"Gomez",
+                         @"photoPath":@"leo.png",
+                         @"headline":@"Whatchu call me?",
+                         @"location": @"Miami, FL"
                         }
     ];
     _guides = [[NSMutableArray alloc] init];
@@ -84,6 +108,17 @@
     cell.tourGuideHeadline.text = guide.headline;
     
     return cell;
+}
+
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if([segue.identifier isEqualToString:@"tourProfileDetail"])
+    {
+        // get selected guide index path
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        TourProfileDetailViewController *controller = (TourProfileDetailViewController *)segue.destinationViewController;
+        controller.tourGuide = [_guides objectAtIndex:indexPath.row];
+    }
 }
 
 /*
